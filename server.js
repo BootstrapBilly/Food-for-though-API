@@ -17,6 +17,16 @@ const MONGODBURI = "mongodb://Billy:bjc123@billy-shard-00-00-qqthk.mongodb.net:2
 
 const server = express();
 
+server.use((req,res,next) => {
+
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+  
+})
+
+server.use(bodyParser.json());
 server.use(express.static(path.join(__dirname, 'public')));//Allow the html to connect to css pages
 
 server.use(bodyParser.urlencoded({extended: false}));//Set up the body parser
@@ -34,7 +44,7 @@ mongoose
   )
   .then(result => {
     server.listen(5000);
-    console.log("Server running on port 5000")
+    console.log("\n\x1b[36mServer running on port 5000\n")
   })
   .catch(err => {
     console.log(err);
