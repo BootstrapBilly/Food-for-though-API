@@ -10,6 +10,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const helmet = require("helmet")
 
 //-File configuration
 dotenv.config();
@@ -25,6 +26,8 @@ server.use((req,res,next) => {
   next();
   
 })
+
+server.use(helmet())
 
 server.use(bodyParser.json());
 server.use(express.static(path.join(__dirname, 'public')));//Allow the html to connect to css pages
@@ -42,7 +45,7 @@ mongoose
     MONGODBURI
   )
   .then(result => {
-    server.listen(4000);
+    server.listen(process.env.PORT || 4000);
     console.log("\n\x1b[36mServer running on port 4000\n")
   })
   .catch(err => {

@@ -8,6 +8,7 @@ const express = require("express");
 
 const router = express.Router();
 
-router.post("/add_favourite", favourites_controller.add_favourite);
+router.post("/toggle_favourite", favourites_controller.toggle_favourite);
+router.get("/get_favourites", favourites_controller.get_favourites);
 
 module.exports = router;
