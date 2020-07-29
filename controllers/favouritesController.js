@@ -1,4 +1,4 @@
-const Favourites = require("../models/Favourites")
+const Favourites = require("../models/Favourites.js")
 
 exports.toggle_favourite = async (req, res, next) => {
 
