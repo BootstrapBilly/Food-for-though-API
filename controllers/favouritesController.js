@@ -2,6 +2,8 @@ const Favourites = require("../models/favourites_model.js")
 
 exports.toggle_favourite = async (req, res, next) => {
 
+    console.log(req.body)
+
     //extract everything from the request and store them in variables
     const title = req.body.title.toLowerCase()
     const thumbnail = req.body.thumbnail.toLowerCase()
@@ -10,6 +12,9 @@ exports.toggle_favourite = async (req, res, next) => {
     const source = req.body.source.toLowerCase()
     const pros = req.body.pros
     const cons = req.body.cons
+    const categories = req.body.categories
+    const toggle_options = req.body.toggle_options
+    const default_portion = req.body.default_portion
 
     try {
 
@@ -33,7 +38,10 @@ exports.toggle_favourite = async (req, res, next) => {
                 kcals: kcals,
                 source: source,
                 pros: pros,
-                cons: cons
+                cons: cons,
+                categories: categories,
+                toggle_options:toggle_options,
+                default_portion:default_portion
 
             })
 

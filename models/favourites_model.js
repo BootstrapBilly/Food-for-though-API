@@ -43,7 +43,18 @@ const favouriteSchema = new Schema({
 
     pros: [],
 
-    cons: []
+    cons: [],
+
+    categories : [],
+
+    toggle_options : [],
+
+    default_portion : {
+
+        type: String,
+        required: true
+
+    }
 
 });
 
