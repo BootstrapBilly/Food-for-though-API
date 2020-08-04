@@ -4,6 +4,7 @@ const path = require("path");
 
 //Custom
 const favourites_router = require("./routes/favourites");
+const portion_router = require("./routes/portion_size");
 
 //External
 const bodyParser = require("body-parser");
@@ -37,6 +38,7 @@ server.use(bodyParser.urlencoded({extended: false}));//Set up the body parser
 //=Middleware
 
 server.use(favourites_router);
+server.use(portion_router);
 
 //* Database connection
 
