@@ -7,6 +7,7 @@ exports.toggle_favourite = async (req, res, next) => {
     //extract everything from the request and store them in variables
     const title = req.body.title.toLowerCase()
     const thumbnail = req.body.thumbnail.toLowerCase()
+    const image = req.body.image.toLowerCase()
     const rating = req.body.rating
     const kcals = req.body.kcals
     const source = req.body.source.toLowerCase()
@@ -34,6 +35,7 @@ exports.toggle_favourite = async (req, res, next) => {
 
                 title: title,
                 thumbnail: thumbnail,
+                image:image,
                 rating: rating,
                 kcals: kcals,
                 source: source,

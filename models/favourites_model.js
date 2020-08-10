@@ -20,6 +20,13 @@ const favouriteSchema = new Schema({
 
     },
 
+    image: {
+
+        type: String,
+        required: true
+
+    },
+
     rating: {
 
         type: String,
