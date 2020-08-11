@@ -6,11 +6,11 @@ A very small API for persisting favourited food items and portion size for the f
 
 https://github.com/BootstrapBilly/Food-for-thought
 
-### Database
+## Database
 
 It connects to a mongodb database
 
-### Endpoints <br/>
+## Endpoints <br/>
 
 
 ### Set portion size
