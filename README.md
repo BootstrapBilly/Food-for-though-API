@@ -21,7 +21,7 @@ POST => https://food-for-thoughtt.herokuapp.com/set_portion_size"
 
 &nbsp;&nbsp;&nbsp; **title**:String - Title of the food item where the portion size is being set<br/>
 &nbsp;&nbsp;&nbsp; **text**:String - Name of portion size e.g. (Half, 100g, two)<br/>
-&nbsp;&nbsp;&nbsp; **multiplier**:String - Multiplier to adjust the calories on the front end<br/><br/><br/>
+&nbsp;&nbsp;&nbsp; **multiplier**:String - Multiplier to adjust the calories on the front end<br/><br/>
 
 
 ### Get portion size
