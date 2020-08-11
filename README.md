@@ -1,6 +1,7 @@
 # What is it ?
 
-A very small API for persisting favourited food items and portion size for the food for thought app
+A very small API for persisting favourited food items and portion size for the food for thought app </br>
+Currently hosted on a heroku server
 
 # The front end
 
