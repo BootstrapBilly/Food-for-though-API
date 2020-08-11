@@ -21,7 +21,7 @@ POST => https://food-for-thoughtt.herokuapp.com/set_portion_size"
 
 &nbsp;&nbsp;&nbsp; **title**:String - Title of the food item where the portion size is being set<br/>
 &nbsp;&nbsp;&nbsp; **text**:String - Name of portion size e.g. (Half, 100g, two)<br/>
-&nbsp;&nbsp;&nbsp; **multiplier**:String - Multiplier to adjust the calories on the front end<br/><br/>
+&nbsp;&nbsp;&nbsp; **multiplier**:String - Multiplier to adjust the calories on the front end<br/><br/><br/>
 
 
 ### Get portion size
@@ -30,7 +30,7 @@ POST => https://food-for-thoughtt.herokuapp.com/set_portion_size"
 
 POST => https://food-for-thoughtt.herokuapp.com/get_portion_size" 
 
-&nbsp;&nbsp;&nbsp; **title**:String - Title of the food item where the portion size is being fetched<br/>
+&nbsp;&nbsp;&nbsp; **title**:String - Title of the food item where the portion size is being fetched<br/><br/>
 
 
 ### Add or remove from favourites
@@ -51,7 +51,7 @@ POST => https://food-for-thoughtt.herokuapp.com/toggle_favourite"
 &nbsp;&nbsp;&nbsp; **cons**:Array - A list of bad things about the food<br/>
 &nbsp;&nbsp;&nbsp; **categories**:Array - A list of categories it falls into such as (Salad, lunch, fruit, meat, dinner)<br/>
 &nbsp;&nbsp;&nbsp; **toggle_options**:Array - A list of portion sizes available for the item<br/>
-&nbsp;&nbsp;&nbsp; **default_portion**:String - The default portion size for the item e.g 100g<br/><br/>
+&nbsp;&nbsp;&nbsp; **default_portion**:String - The default portion size for the item e.g 100g<br/><br/><br/>
 
 
 ### Get portion favourites
