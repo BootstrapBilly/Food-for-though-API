@@ -10,8 +10,9 @@ https://github.com/BootstrapBilly/Food-for-thought
 
 It connects to a mongodb database
 
-### Endpoints
+### Endpoints 
 
+<br/>
 ### Set portion size
 
 **This endpoint sets the current portion size of the item e.g. 100g=>200g, which will then be reflected on the front end by changing the calories**
@@ -22,6 +23,7 @@ POST => https://food-for-thoughtt.herokuapp.com/set_portion_size"
 &nbsp;&nbsp;&nbsp; **text**:String - Name of portion size e.g. (Half, 100g, two)<br/>
 &nbsp;&nbsp;&nbsp; **multiplier**:String - Multiplier to adjust the calories on the front end<br/>
 
+<br/>
 ### Get portion size
 
 **This endpoint fetches the current portion size of the item**
@@ -30,6 +32,7 @@ POST => https://food-for-thoughtt.herokuapp.com/get_portion_size"
 
 &nbsp;&nbsp;&nbsp; **title**:String - Title of the food item where the portion size is being fetched
 
+<br/>
 ### Add or remove from favourites
 
 POST => https://food-for-thoughtt.herokuapp.com/toggle_favourite" 
@@ -50,6 +53,7 @@ POST => https://food-for-thoughtt.herokuapp.com/toggle_favourite"
 &nbsp;&nbsp;&nbsp; **toggle_options**:Array - A list of portion sizes available for the item<br/>
 &nbsp;&nbsp;&nbsp; **default_portion**:String - The default portion size for the item e.g 100g<br/>
 
+<br/>
 ### Get portion favourites
 
 GET => https://food-for-thoughtt.herokuapp.com/get_portion_size" 
